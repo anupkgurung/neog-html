@@ -1,111 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--read about these-->
-    
-    <!--thematic break-->
-    <!--sementic tags, accessiblity tree -->
-    <!--inline vs block elemtns-->
-    <!--undraw, unsplash- for images-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Home | Portfolio</title>
+    <link href="styles.css" rel="stylesheet" />
+
 </head>
 <body>
-    <h1>component library</h1>
-    <p>creating component library</p>
-
-    <hr>
-
-    <h2>@typography</h2>
-
-    <h1>Biggest Head</h1>
-    <h2>Second biggest</h2>
-    <p>Normal test</p>
-    <small>smaller text</small>
-
-    <h2>@container</h2>
-
-    <h3>fluid container</h3>
-    <div> fluid container it will go till the end</div>
-    <h3>center container</h3>
-    <div>center container, this will till specified width</div>
-    
-    <hr>
-    
-    <h2>@Links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
-
-    <hr>
-
-    <h2>@lists</h3>
-    <h3>unordered list</h3>
-    <ul>
-        <li>Item One</li>
-        <li>Item two</li>
-        <li>Item three</li>
-    </ul>
-
-    <h3>unordered inline list</h3>
-    <ul>
-        <li>inline item one</li>
-        <li>inline item two</li>
-        <li>inline item three</li>
-    </ul>
-
-    <h3>reverse ordered list</h3>
-    <ol>
-        <li>reverse item one</li>
-        <li>reverse item two</li>
-        <li>reverse item three</li>
-    </ol>
-
-    <hr>
-    
-    <h2>@nav</h2>
-
-    <nav>
-        <div>i am brand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">I AM DEVELOPER</div>
+        <ul class="list-no-bullet nav-pills">
+            <li class="list-inline link-active">
+                <a class="link" href="/">home</a>
             </li>
-            <li>
-                <a href="/">home products</a>
+             <li class="list-inline">
+                <a class="link" href="/projects.html">projects</a>
             </li>
-            <li>
-                <a href="/">about</a>
+             <li class="list-inline">
+                <a class="link" href="/blogs.html">blogs</a>
             </li>
         </ul>
     </nav>
 
-    <hr>
-
-    <h2>Header</h2>
-    <header>
-        <img src="images/hero.svg" />
-        <h1>header inside</h1>
+    <header class="head">
+        <img class="head-img" src="images/hero.svg" />
+        <h1 class="head-label">
+            Anup Gurung
+            <span class="sub-label">Full Stack Developer</span>
+        </h1>
     </header>
 
-    <hr>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>Technologies</h1>
+            <p>
+               I am familiar with html, js, java.
+            </p>
+        </div>         
+    </section>
 
-    <h2>@section</h2>
-   
-    <section>   
-        <h3>white section</h3>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>projects</h1>
+            <p>
+               Projects i have worked on
+            </p>
+            <a class="link link-primary" href="/">See Projects</a>
+
+        </div>         
     </section>
-    <section>   
-        <h3>off white section</h3>
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>blogs</h1>
+            <p>
+               I am familiar with html, js, java.
+            </p>
+            <a class="link link-primary" href="/">Read Blogs</a>
+        </div>
     </section>
-    <footer>
-        <div>samll heading inside footer</div>
-        <ul>
-            <li>instagram</li>
-            <li>linkedin</li>
-            <li>github</li>
+
+    <footer class="footer">
+        <div class="footer-head">social media presense</div>
+        <ul class="list-no-bullet">
+            <li class="list-inline">
+                <a class="link" href="/">instagram</a>                
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">linkedin</a>
+            </li>
+            <li class="list-inline">                
+                <a class="link" href="/">github</a>
+            </li>
         </ul>
     </footer>
-    <div></div>
+
 </body>
 </html>
